@@ -1,0 +1,194 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+background: rgb(58,62,74); 
+font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  width: 300px;
+  margin: 20px auto;
+
+ background: rgb(58,62,74); 
+  background-repeat: no-repeat;
+}
+
+/*nav bar*/
+nav{
+    margin: 0;
+    display: flex;
+
+    justify-content: space-between;
+   
+    font-family: 'Montserrat', sans-serif;
+    padding: 7.5px;
+    align-items: center;
+  
+} 
+nav .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    
+}
+nav .logo img{
+    margin: 5px;
+    border-radius: 100%;
+    height: 75px;
+    
+}
+nav .lien_externe{
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+nav .lien_externe a{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: transform 0.25s;
+    margin: 10px;
+}
+nav .lien_externe a:hover{
+    color: #FFFF00;
+    transform: scale(1.15);
+}
+
+/*style pour parti info plus grois logo*/
+.page{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+    
+
+}
+.page .info{
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+
+
+}
+.page .info .gauche{
+
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: 50%;
+}
+
+
+
+
+
+.page .info .droite{
+box-sizing: 50%;
+
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+    
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 20px;
+}
+.page .info .droite .description{
+
+  width: 450px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: justify;
+  font-size: 100%;
+}
+
+
+
+
+
+.page .info .ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  background: url(../PHOTO/logo2.png) no-repeat;
+
+  background-size: 100%;
+  
+}
+.page .info .ball:before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+  -webkit-filter: blur(5px);
+  z-index: 2;
+}
+.page .info .ball:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(245, 237, 48, 0), rgba(81,83,95,0.1) 50%, #3a3e4a 80%);
+}
+.page .info .ball .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-160px);
+    transform: rotateX(90deg) translateZ(-160px);
+    z-index: 1; }
+.page .info .stage {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
