@@ -446,36 +446,35 @@
   height: var(--dl-size-size-xsmall);
 }
 .membres-links1 {
-  flex: 0 0 auto;
+  flex: 1;
+  width: auto;
   display: flex;
-  align-self: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.membres-text02 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.membres-text03 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.membres-text04 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.membres-text05 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.membres-text06 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.membres-buttons {
-  display: flex;
-  margin-top: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.membres-login {
-  margin-right: var(--dl-space-space-twounits);
+.membres-membres1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+.membres-projet1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.membres-rapport1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
 }
 .membres-icon04 {
   width: var(--dl-size-size-xsmall);
@@ -502,7 +501,7 @@
   justify-content: center;
   background-image: url("public/external/imagine_a_scene_in_a_haunted_house_in_three_dim-1500h.jpg");
 }
-.membres-text07 {
+.membres-text04 {
   color: var(--dl-color-gray-white);
   width: 800px;
   font-size: 5rem;
@@ -511,7 +510,7 @@
   text-align: center;
   margin-bottom: var(--dl-space-space-twounits);
 }
-.membres-text08 {
+.membres-text05 {
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
   text-align: center;
@@ -575,10 +574,19 @@
   justify-content: center;
   background-color: #000000;
 }
-.membres-text16 {
+.membres-text13 {
   color: rgb(255, 255, 255);
 }
 @media(max-width: 991px) {
+  .membres-text05 {
+    text-align: center;
+  }
+  .membres-text06 {
+    text-align: center;
+  }
+  .membres-text07 {
+    text-align: center;
+  }
   .membres-text08 {
     text-align: center;
   }
@@ -592,15 +600,6 @@
     text-align: center;
   }
   .membres-text12 {
-    text-align: center;
-  }
-  .membres-text13 {
-    text-align: center;
-  }
-  .membres-text14 {
-    text-align: center;
-  }
-  .membres-text15 {
     text-align: center;
   }
   .membres-container2 {
@@ -628,28 +627,18 @@
     width: var(--dl-size-size-medium);
     height: var(--dl-size-size-medium);
   }
-  .membres-text02 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .membres-text03 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .membres-text04 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .membres-text05 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .membres-text06 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
   .membres-hero {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+  }
+  .membres-text05 {
+    text-align: center;
+  }
+  .membres-text06 {
+    text-align: center;
+  }
+  .membres-text07 {
+    text-align: center;
   }
   .membres-text08 {
     text-align: center;
@@ -666,15 +655,6 @@
   .membres-text12 {
     text-align: center;
   }
-  .membres-text13 {
-    text-align: center;
-  }
-  .membres-text14 {
-    text-align: center;
-  }
-  .membres-text15 {
-    text-align: center;
-  }
   .membres-container1 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -687,7 +667,7 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .membres-text16 {
+  .membres-text13 {
     text-align: center;
     margin-left: var(--dl-space-space-unit);
     margin-right: var(--dl-space-space-unit);
@@ -706,7 +686,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .membres-text07 {
+  .membres-text04 {
     width: 479px;
     min-width: 479px;
   }
@@ -726,7 +706,7 @@
     padding: var(--dl-space-space-unit);
     flex-direction: column;
   }
-  .membres-text16 {
+  .membres-text13 {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);

@@ -113,36 +113,35 @@
   height: var(--dl-size-size-xsmall);
 }
 .rapport-links1 {
-  flex: 0 0 auto;
+  flex: 1;
+  width: auto;
   display: flex;
-  align-self: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.rapport-text02 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.rapport-text03 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.rapport-text04 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.rapport-text05 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.rapport-text06 {
-  margin-bottom: var(--dl-space-space-unit);
-}
-.rapport-buttons {
-  display: flex;
-  margin-top: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.rapport-login {
-  margin-right: var(--dl-space-space-twounits);
+.rapport-membres1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+.rapport-projet1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.rapport-rapport1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
 }
 .rapport-icon04 {
   width: var(--dl-size-size-xsmall);
@@ -170,7 +169,7 @@
   justify-content: center;
   background-image: url("public/external/2-1500h.jpg");
 }
-.rapport-text07 {
+.rapport-text4 {
   color: var(--dl-color-gray-white);
   width: 700px;
   font-size: 5rem;
@@ -179,7 +178,7 @@
   text-align: center;
   margin-bottom: var(--dl-space-space-twounits);
 }
-.rapport-text08 {
+.rapport-text5 {
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -210,7 +209,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.rapport-text09 {
+.rapport-text6 {
   width: 700px;
   font-size: 3rem;
   max-width: 700rem;
@@ -258,7 +257,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.rapport-text10 {
+.rapport-text7 {
   width: 700px;
   font-size: 3rem;
   max-width: 700rem;
@@ -299,11 +298,11 @@
   justify-content: center;
   background-color: #000000;
 }
-.rapport-text11 {
+.rapport-text8 {
   color: rgb(255, 255, 255);
 }
 @media(max-width: 991px) {
-  .rapport-text08 {
+  .rapport-text5 {
     text-align: center;
   }
 }
@@ -325,30 +324,11 @@
     width: var(--dl-size-size-medium);
     height: var(--dl-size-size-medium);
   }
-  .rapport-text02 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .rapport-text03 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .rapport-text04 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .rapport-text05 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .rapport-text06 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
   .rapport-hero {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .rapport-text08 {
+  .rapport-text5 {
     text-align: center;
   }
   .rapport-hero1 {
@@ -356,7 +336,7 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .rapport-text09 {
+  .rapport-text6 {
     text-align: center;
   }
   .rapport-hero2 {
@@ -364,14 +344,14 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .rapport-text10 {
+  .rapport-text7 {
     text-align: center;
   }
   .rapport-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .rapport-text11 {
+  .rapport-text8 {
     text-align: center;
     margin-left: var(--dl-space-space-unit);
     margin-right: var(--dl-space-space-unit);
@@ -390,7 +370,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .rapport-text07 {
+  .rapport-text4 {
     width: 479px;
     min-width: 479px;
   }
@@ -400,7 +380,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .rapport-text09 {
+  .rapport-text6 {
     width: 479px;
   }
   .rapport-link {
@@ -413,7 +393,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .rapport-text10 {
+  .rapport-text7 {
     width: 479px;
   }
   .rapport-link1 {
@@ -424,7 +404,7 @@
     padding: var(--dl-space-space-unit);
     flex-direction: column;
   }
-  .rapport-text11 {
+  .rapport-text8 {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
