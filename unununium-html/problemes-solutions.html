@@ -102,7 +102,7 @@
               <div class="problmes-solutions-top">
                 <img
                   alt="image"
-                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  src="public/external/screenshot%202023-10-14%20at%2020-56-45%20design%20sans%20titre-1500h.png"
                   class="problmes-solutions-logo"
                 />
                 <div
@@ -173,21 +173,21 @@
               />
               <div class="blog-post-card3-container">
                 <h1 class="blog-post-card3-text">
-                  <span>Lorem ipsum dolor sit amet</span>
+                  <span>Déplacement du joueur</span>
                 </h1>
                 <div class="blog-post-card3-container1">
                   <span class="blog-post-card3-text1">
                     <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed non volutpat turpis. Mauris luctus rutrum mi ut
-                      rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
-                      sit amet, consectetur adipiscing ...
+                     Lors de la création du joeur, la programmation des déplacements a entrainé plusieurs complications. Lorsque l'on souhaitait avancer le personnage reculer et inversement.
+                     De plus, la caméra rester sur place ne se déplaçant pas avec le joueur. En somme, le problème était le même lorsque nous souhaitions courire ou s'accroupire.<br><br>
+                     Afin de remédier à ces problèmes nous avons décider que la caméra serait instancier dans le joueur plutôt que le joueur instancier dans le noeud de la caméra. Ce qui a permis a la caméra de suivre le "corps" du joueur.
+                     De plus, afin d'éviter les prochains soucis de déplacement nous avons décider que le jeu se jouerait sur un clavier "azerty".
                     </span>
                   </span>
-                  <span class="blog-post-card3-text2">Read More</span>
+                
                 </div>
                 <span class="blog-post-card3-text3">
-                  <span>by Jon Doe 5 hours ago</span>
+                  <span>Lucas Bernardeau</span>
                 </span>
               </div>
             </div>
@@ -203,21 +203,19 @@
               />
               <div class="blog-post-card3-container">
                 <h1 class="blog-post-card3-text">
-                  <span>Lorem ipsum dolor sit amet</span>
+                  <span>Le moral au ras des baskets</span>
                 </h1>
                 <div class="blog-post-card3-container1">
                   <span class="blog-post-card3-text1">
                     <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed non volutpat turpis. Mauris luctus rutrum mi ut
-                      rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
-                      sit amet, consectetur adipiscing ...
+                      Nous avons rencontré un ultime problème, l’un des plus complexes à régler celui de la « position accroupie » du personnage. La solution paraissait pourtant simple, baisser la caméra et réduire la taille du corps. <br><br>
+                      Or, il fallait prendre en compte que le personnage puisse se déplacer tout en restant accroupi. Nous avons donc décidé que la vitesse serait réduite, dès que le personnage s’accroupirait. Puis nous avons seulement baisser la position de la caméra grâce à la position de la tête. <br><br>
+                      Compte-tenu du temps imparti et du nombre de tâches encore à réaliser, nous avons jugé plus pertinent de définir deux corps, l’un en station « debout » et l’autre, en station « accroupie ». Nous permettant de changer la visibilité de ces statuts grâce à des booléens.
                     </span>
                   </span>
-                  <span class="blog-post-card3-text2">Read More</span>
                 </div>
                 <span class="blog-post-card3-text3">
-                  <span>by Jon Doe 5 hours ago</span>
+                  <span>Lucas Bernardeau</span>
                 </span>
               </div>
             </div>
@@ -232,21 +230,18 @@
             />
             <div class="blog-post-card3-container">
               <h1 class="blog-post-card3-text">
-                <span>Lorem ipsum dolor sit amet</span>
+                <span>La tête dans les nuages</span>
               </h1>
               <div class="blog-post-card3-container1">
                 <span class="blog-post-card3-text1">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-                    Integer in dignissim tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing ...
+                    Lors de la création du multijoueur, nous avons constaté un souci de proportion. La caméra n’était pas au niveau de la tête comme nous le pensions. <br><br>
+On a remarqué que le curseur qui représente la vision de l’un des joueurs ne se trouvait pas au niveau du visage de l’autre joueur.  Pour rectifier ce décalage, nous avons changé les proportions du model 3D en le réduisant à 70% de sa taille originale.
                   </span>
                 </span>
-                <span class="blog-post-card3-text2">Read More</span>
               </div>
               <span class="blog-post-card3-text3">
-                <span>by Jon Doe 5 hours ago</span>
+                <span>Lucas Bernardeau</span>
               </span>
             </div>
           </div>
@@ -259,26 +254,31 @@
             >
               <img
                 alt="image"
-                src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHdvcmtpbmclMjBkZXNrfGVufDB8fHx8MTYyNjI1MDYwMg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="blog-post-card3-image"
               />
               <div class="blog-post-card3-container">
                 <h1 class="blog-post-card3-text">
-                  <span>Lorem ipsum dolor sit amet</span>
+                  <span>La maison des enfers</span>
                 </h1>
                 <div class="blog-post-card3-container1">
                   <span class="blog-post-card3-text1">
                     <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed non volutpat turpis. Mauris luctus rutrum mi ut
-                      rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
-                      sit amet, consectetur adipiscing ...
+                      La maison a été créée dans Blender (Wikipédia : Blender est un logiciel libre de modélisation, d’animation par ordinateur et de rendu en 3D, créé en 1994), générant certains problèmes de mis à l’échelle. En effet, le modèle 3D du personnage passait au travers de certains murs. <br><br>
+Ces difficultés étant résolues, il n’en restait pas moins le problème des collisions constaté lors de la deuxième importation du modèle 3D de la maison. 
+Par conséquent, les personnes chargées de la maison ont dû refaire un modèle 3D avec moins de détails pour faciliter la création des collisions automatiques gérées par Godot.<br><br>
+La problématique de la montée des escaliers s’est ajoutée à toutes ces difficultés. Le personnage était dans l’incapacité de monter les escaliers. 
+Nous avons testé de nombreuses méthodes mises à notre disposition par les utilisateurs de Godot sur discord, YouTube, X (anciennement Tweeter), ou même Instagram. En vain, sans grande réussite, une véritable déception pour l’équipe. 
+Une idée a émergé. Nous devions recréer chacune des marches, une par une. C’est une idée audacieuse et peu optimisée par les ressources disponibles, nous viserons à y remédier à l’avenir.<br><br>
+Pour répondre aux problèmes les plus urgents, nous avons créé un modèle de marche qui sert de collision individuelle à chaque marche. Le joueur entre dans l’espace délimité par cette instance de « marche ». Le personnage qu’il contrôle, modifie son axe des Y pour monter grâce à une fonction. <br><br>
+Cette méthode présente de nombreux désavantages. Elle n’est pas optimisée. 
+En effet, si nous devions coder des centaines de marche, il aurait été trop long de dupliquer le modèle pour chaque marche.<br><br>
+Quand il descend, au contact du bloc, le joueur subit l’effet du changement des axe des Y car il est augmenté à chaque contact. Ceci n’empêche pas la descente mais cela ralenti fortement le joueur.  Le but à atteindre est de pouvoir monter et descendre les escaliers. C’est pourquoi nous avons choisi cette option afin de poursuivre notre action. Nous pourrons l’améliorer par la suite.
                     </span>
                   </span>
-                  <span class="blog-post-card3-text2">Read More</span>
                 </div>
                 <span class="blog-post-card3-text3">
-                  <span>by Jon Doe 5 hours ago</span>
+                  <span>Lucas Bernardeau</span>
                 </span>
               </div>
             </div>
@@ -289,26 +289,24 @@
             >
               <img
                 alt="image"
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fHdvcmt8ZW58MHx8fHwxNjI2NDUwNzky&amp;ixlib=rb-1.2.1&amp;h=1000"
+                src="https://plus.unsplash.com/premium_photo-1683140655656-20448abc55da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="blog-post-card3-image"
               />
               <div class="blog-post-card3-container">
                 <h1 class="blog-post-card3-text">
-                  <span>Lorem ipsum dolor sit amet</span>
+                  <span>Le sol de verre</span>
                 </h1>
                 <div class="blog-post-card3-container1">
                   <span class="blog-post-card3-text1">
                     <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed non volutpat turpis. Mauris luctus rutrum mi ut
-                      rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
-                      sit amet, consectetur adipiscing ...
+                      La hitbox générée par Godot pour le sol de la map présentait des irrégularités. Cela provoquait des problèmes de collision, le personnage pouvant traverser le sol à certains endroits.<br><br>
+La géométrie du sol était trop complexe, ce qui rendait la génération de la hitbox difficile et contribuait aux problèmes de collision.<br><br>
+Le sol a été remodelé de manière plus simple et plus propre. Cela a permis de corriger les problèmes de collision et d'améliorer la performance du jeu.
                     </span>
                   </span>
-                  <span class="blog-post-card3-text2">Read More</span>
                 </div>
                 <span class="blog-post-card3-text3">
-                  <span>by Jon Doe 5 hours ago</span>
+                  <span>Célia Bocage</span>
                 </span>
               </div>
             </div>
@@ -318,30 +316,148 @@
           >
             <img
               alt="image"
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHx3b3JrJTIwb2ZmaWNlfGVufDB8fHx8MTYyNjQ1MDgzMQ&amp;ixlib=rb-1.2.1&amp;h=1000"
+              src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D"
               class="blog-post-card3-image"
             />
             <div class="blog-post-card3-container">
               <h1 class="blog-post-card3-text">
-                <span>Lorem ipsum dolor sit amet</span>
+                <span>Pourquoi recommencer si on peut quitter ?</span>
               </h1>
               <div class="blog-post-card3-container1">
                 <span class="blog-post-card3-text1">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-                    Integer in dignissim tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing ...
+                    Nous avons rencontré des problèmes lors de la relance d'une partie après en avoir détruit une précédente. Le bouton "Recommencer" présent dans le menu pause ne fonctionnait pas correctement et pouvait entraîner des erreurs. 
+                    <br><br>Pour garantir une meilleure stabilité, nous avons décidé de supprimer ce bouton temporairement et d'implémenter la touche F5 qui nous envoie directement au menu game over pour relancer la partie.
                   </span>
                 </span>
-                <span class="blog-post-card3-text2">Read More</span>
               </div>
               <span class="blog-post-card3-text3">
-                <span>by Jon Doe 5 hours ago</span>
+                <span>Célia Bocage</span>
+
               </span>
             </div>
           </div>
+
+
+          
+
+
+
+
+
+
         </div>
+        <div class="problmes-solutions-blog1">
+          <div class="problmes-solutions-container3">
+            <div
+              class="blog-post-card3-blog-post-card blog-post-card3-root-class-name16"
+            >
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="blog-post-card3-image"
+              />
+              <div class="blog-post-card3-container">
+                <h1 class="blog-post-card3-text">
+                  <span>C'est qui le patron ?</span>
+                </h1>
+                <div class="blog-post-card3-container1">
+                  <span class="blog-post-card3-text1">
+                    <span>
+                      Durant les premiers tests de notre application, nous avons observé un comportement inattendu : le joueur était capable de contrôler simultanément les deux personnages.<br><br>
+                    Afin de garantir un contrôle individuel de chaque personnage, il était nécessaire de dissocier l’exécution du code.</span>
+                  </span>
+                </div>
+                <span class="blog-post-card3-text3">
+                  <span>Marius Vanhaesebroucke</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="problmes-solutions-container4">
+            <div
+              class="blog-post-card3-blog-post-card blog-post-card3-root-class-name17"
+            >
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="blog-post-card3-image"
+              />
+              <div class="blog-post-card3-container">
+                <h1 class="blog-post-card3-text">
+                  <span>1000 de ping</span>
+                </h1>
+                <div class="blog-post-card3-container1">
+                  <span class="blog-post-card3-text1">
+                    <span>
+                      Lors de la deuxième phase de tests, nous avons identifié un problème de synchronisation entre les joueurs.<br><br>
+
+La raison était qu’il fallait nommer le nœud des joueurs en fonction de leur identifiant, c’est pour cela que l’on a fait la liste des joueurs lors du lancement de la partie.<br><br>
+
+Le code ci-dessous instancie tous les joueurs présents dans la liste précédemment créée, en utilisant leur identifiant unique comme clé de différenciation.<br><br>
+                    </span>
+                  </span>
+                </div>
+                <span class="blog-post-card3-text3">
+                  <span>Marius Vanhaesebroucke</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div
+            class="blog-post-card3-blog-post-card blog-post-card3-root-class-name15"
+          >
+            <img
+              alt="image"
+              src="https://plus.unsplash.com/premium_photo-1682130132480-9863599d046f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="blog-post-card3-image"
+            />
+            <div class="blog-post-card3-container">
+              <h1 class="blog-post-card3-text">
+                <span>Ou est le problème ?</span>
+              </h1>
+              <div class="blog-post-card3-container1">
+                <span class="blog-post-card3-text1">
+                  <span>
+                    Le game design à poser plusieurs problèmes. Tout d’abord, sur le choix des types de nœud pour les interactions, on aurait pu mettre en place un RayCast3D. Une sorte de laser émis par le joueur pour détecter où il regarde et s'il y a des collisions face à lui (is_colliding) avec ses collisions. On pourrait donc récupérer les propriétés de l’objet grâce à un get_collider comme son nom l’indique ou une interaction donnée à l’objet pour ensuite les afficher au joueur grâce à un Prompt (un Label sous le nœud récupéré dans le script) avec une exception pour ne pas détecter le joueur lui-même.<br><br>
+Pour l'interaction, il aurait donc fallu récupérer le moment où la touche est activée lorsque le joueur regarde l’objet en question pour ensuite récupérer son string et activer son interaction.
+Une autre façon pour les interactions aurait pu être la création de deux classes Interactable et Interactor Interactable récupérer des signaux Focused Unfocused et Interact. Dans la classe Interactor, on définit les signaux et si l’instance et valide, nous ajoutons une fonction qui récupère l’objet avec qui nous pouvons interagir la plus proche grâce à un get_overlapping_areas et une liste qu’on va parcourir et détecter s'il y a une area avec laquelle on peut interagir. On peut ensuite récupérer leurs positions globales et avec une condition : vérifier quelles interactions est la plus proche.<br><br>
+Puis, on crée un nœud qui hérite de Interactor qu’on nomme PlayerInteractor et qui récupère les propriétés du joueur.
+Un _physic_Process qui va donc être appelé toutes les frames va vérifier si le joueur est proche ou non d’un objet avec lequel il peut interagir et si le joueur n’est pas assez proche, il envoie le signal unfocus.<br><br>
+
+
+Une méthode input sera utilisée pour vérifier si le joueur appuie sur la touche “interact” et si l’instance est valide, il va donc envoyer le signal interact.
+Cependant, ces méthodes étaient complexes à mettre en place, faisable en Godot, mais plus compliqué lorsqu’on les passe en C# que ce soit leurs codes, leurs références et lorsqu’on va faire hériter les objets de ces classes.
+On a donc préféré rester sur une approche simple du code pour les mécanismes. Pour qu’ils soient facilement compréhensibles pour pouvoir mieux les débugger et les utiliser. <br><br>
+
+                  
+                  
+                  
+                  </span>
+                </span>
+              </div>
+              <span class="blog-post-card3-text3">
+                <span>Guillaume Julia</span>
+
+              </span>
+            </div>
+          </div>
+
+
+          
+
+
+
+
+
+
+        </div>
+
+        
+
         <footer class="problmes-solutions-footer">
           <span class="problmes-solutions-text6">
             ©Copyright 2023 Unununium. Tous droits reversés.

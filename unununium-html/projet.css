@@ -116,7 +116,7 @@
   position: absolute;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: gray;
 }
 .projet-nav {
   display: flex;
