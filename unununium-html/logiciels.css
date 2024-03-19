@@ -174,7 +174,7 @@
   position: absolute;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: gray;
 }
 .logiciels-nav {
   display: flex;
