@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carte Personnalisée</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        #map {
+            flex: 1;
+            width: 100%;
+        }
+        .info {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: #f8f8f8; /* Ajout d'un fond pour contraster avec la carte */
+            color: red;
+        }
+        .love-message {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffe4e1; /* Couleur de fond douce pour le message */
+            width: 100%;
+            padding-left: 20px; /* Ajout d'un padding pour éviter de coller */
+            padding-right: 20px; /* Ajout d'un padding pour éviter de coller */
+            
+        }
+        .leaflet-control-attribution {
+            display: none !important;
+        }
+        .pink-map {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(280deg) brightness(90%) contrast(90%);
+        }
+        @media (max-width: 600px) {
+            .info, .love-message {
+                font-size: 16px;
+                padding: 5px;
+            }
+            #map {
+                height: 60vh; /* Ajuste la hauteur pour les petits écrans */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="info">
+           <h2>Onde tudo começou</h2>
+            <p>LUCIE & LUCAS</p>
+            <p>48°47'44.0008" N 2°21'34.9992" E</p> <!-- Coordonnées formatées -->
+        </div>
+        <div class="love-message">
+            <p>Mon amour, chaque moment à tes côtés est un cadeau précieux. Tu es mon bonheur, ma lumière et mon éternité.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map', { zoomControl: false, dragging: false, scrollWheelZoom: false }).setView([48.795862, 2.359671], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var heartIcon = L.icon({
+            iconUrl: 'heart.png', // Assurez-vous que cette image existe dans votre répertoire
+            iconSize: [32, 32],
+            iconAnchor: [16, 32],
+            popupAnchor: [0, -32]
+        });
+
+        var marker = L.marker([48.795862, 2.359671], { icon: heartIcon }).addTo(map)
+            .bindPopup('<b>Onde tudo começou</b>').openPopup();
+
+        // Changer les couleurs de la carte
+        var pinkMapStyle = [
+            { elementType: 'geometry', stylers: [{ color: '#f3e5f5' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#8e24aa' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'administrative', elementType: 'geometry', stylers: [{ visibility: 'off' }] },
+            { featureType: 'poi', elementType: 'geometry', stylers: [{ color: '#f3e5f5' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
+            { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#f3e5f5' }] },
+            { featureType: 'transit', stylers: [{ visibility: 'off' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#e1bee7' }] }
+        ];
+
+        map.eachLayer(function(layer){
+            if (layer instanceof L.TileLayer) {
+                map.removeLayer(layer);
+            }
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            className: 'pink-map'
+        }).addTo(map);
+
+        var pinkMapStylesheet = document.createElement('style');
+        pinkMapStylesheet.type = 'text/css';
+        pinkMapStylesheet.innerHTML = '.pink-map { filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(280deg) brightness(90%) contrast(90%); }';
+        document.getElementsByTagName('head')[0].appendChild(pinkMapStylesheet);
+    </script>
+</body>
+</html>
